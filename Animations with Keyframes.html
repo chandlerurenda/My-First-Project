@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+          @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          25% {
+            transform: translateY(-30px);
+          }
+          50% {
+            transform: translateY(0px);
+          }
+          75% {
+            transform: translateY(-30px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        .banner {
+           padding: 24px;
+           background-color: #f5f5f5;
+           border-radius: 10px;
+           animation: fadeSlide 1s ease-in-out;
+           animation-delay: 300ms; 
+        }
+
+           .banner2 {
+          display: flex;
+          justify-content: space-evenly;
+           padding: 24px;
+           background-color: #f5f5f5;
+           border-radius: 10px;
+           animation: bounce 4s ease-in-out;
+           animation-delay: 300ms; 
+        }
+    </style>
+</head>
+<body>
+   <div class="banner">
+    <h2>Welcome Back!</h2>
+    <p>This banner animates when the page loads</p>
+   </div>
+<div class="banner2">
+    <h2>Bouncy Bouncy!</p>
+
+</body>
+</html>

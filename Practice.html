@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+<h1>Welcome To My Practice Page!</h1>
+   <nav class="navbar">
+      <h1 class="navbar__logo">FES</h1>
+      <div class="navbar__links">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chandler's HTML Practice Sheet</title>
+
+<style>
+h1 {
+color: blue;
+font-family: 'Script MT', cursive;
+text-align: left;
+letter-spacing: 2px;
+}
+
+h2 {
+color: #3a991f;
+font-family: 'Times New Roman', serif;
+text-align: left;
+letter-spacing: 1px;
+}
+
+h3 {
+color: #ff0400;
+font-family: 'Tahoma', sans-serif;
+font-size: 14px;
+text-align: left;
+letter-spacing: 1px;
+}
+
+p {
+font-size: 18px;
+color: navy;
+}
+
+a {
+font-size: 24px;
+}
+
+.card {
+width: 300px;
+height: 275px;
+padding: 15px;
+margin: 20px;
+border-radius: 8px;
+box-sizing: border-box;
+background-color: lightgray;
+}
+
+.poster { 
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgb(23,120,36);
+    }
+    .poster h1 {
+      color: darkgreen;
+      font-size: 36px;
+      font-weight: 550;
+      margin-bottom: 15px;
+    }
+    .poster p {
+      color: #555;
+      font-size: 18px;
+      font-style: italic; 
+    }
+.changed {
+	font-family: roboto, sans-serif;
+	font-weight: 550;
+	color: darkred;
+}
+
+#special {
+color: black;
+font-family: 'Times New Roman', serif;
+font-weight: 325;
+font-style: underline;
+}
+ .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #4337de;
+        color: white;
+      }
+
+      .navbar__logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .navbar__links {
+        display: flex;
+        gap: 25px;
+      }
+
+      .navbar__links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .navbar__links a:hover {
+        text-decoration: underline;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 40px;
+        background-color: #f7f7f7
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 250px;
+        text-align: center;
+        padding: 20px;
+        overflow: auto;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
+          25% {
+            transform: translateY(-30px);
+          }
+          50% {
+            transform: translateY(0px);
+          }
+          75% {
+            transform: translateY(-30px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        .banner1 {
+           padding: 24px;
+           background-color: #0f791460;
+           border-radius: 10px;
+           animation: fadeSlide 2s ease-in-out;
+           animation-delay: 300ms; 
+        }
+
+        .banner2 {
+          display: flex;
+          justify-content: space-evenly;
+           padding: 24px;
+           background-color: #a01111;
+           border-radius: 10px;
+           animation: bounce 4s ease-in-out;
+           animation-delay: 300ms; 
+        }
+</style>
+<nav>
+	<a href="https://minutemanammo.com/" target="_blank">Minuteman Ammuniton Home Page</a>
+	<br>
+	<a href="https://sporting-systems.com/" target="_blank">Sporting Systems Home Page</a>
+	<br>
+	<a href="https://sporting-systems.com/free-hb1143-training/" target="_blank">Free HB-1143 Training</a>
+
+<h2>Above I've used the [nav] tag inside a [header] tag to create an easy to use navigation section for users!</h2>
+<h3>I've also made sure that the links will open in a new page, by using the _blank attribute inside the anchor!</h3>
+</nav>
+</header>
+</head>
+
+<main>
+<body>
+  <div class="banner1">
+    <h2>Check this out!</h2>
+    <p>This h2 header fades in when the page loads.</p>
+  </div>
+
+      <section class="gallery">
+      <div class="banner2">
+        <div class="card">
+          <img src= "https://minutemanammo.com/cdn/shop/files/IMG_0338_110x110@2x.jpg?v=1770320028" alt= "Card 1">
+          <h2>Project One</h2>
+          <p>Clean and minimal layout.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://minutemanammo.com/cdn/shop/files/IMG_0342_110x110@2x.jpg?v=1770320028" alt="Card 2">
+          <h2>Project Two</h2>
+          <p>Flexible and responsive design.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://minutemanammo.com/cdn/shop/products/20201022_163120_d2c32497-adf2-43d5-b296-d0ed2ee26bcc_110x110@2x.jpg?v=1603417861" alt="Card 3">
+          <h2>Project Three</h2>
+          <p>Built using Flexbox principles.</p>
+        </div>
+      </section>
+
+<h1 class="changed">This is a Practice Sheet for HTML coursework</h1>
+<p><b>One of the things I need to work on is memorizing the HTML structure and tags.</b></p>
+
+<ul>
+	<li>This is an example of an unordered list.</li>
+	<li>They are useful for things like grocery lists.</li>
+	<li>There are not so useful for sequential order, however.</li>
+</ul>
+<div style= "width: 300px; height: 350px; background-color: lightgray; border-radius: 10px; padding: 20px; margin: 0 auto;">
+<ol>
+	<p><i>This is an example of an ordered list--they are used for sequential order!</i></p>
+	<b><li>To change the oil of a vehicle, you should:</li></b>
+	<li><em>Ascertain what oil the vehicle uses.</em></li>
+	<li>learn what oil filter the vehicle uses.</li>
+	<li>Locate the oil pan underneath the vehicle.</li>
+	<li>Locate the drain plug on the oil pan.</li>
+	<br>
+	<ul><li>I've added in some background color and border for this using a style attribute in the div tag!</li
+>
+	<li>This is a perfect example of inline CSS styling, as the CSS is within the div tag!</li>
+	</ul>
+</ol>
+</div>
+
+<div class="card">
+<h2> My first attempt at a CSS card is right here!</h2>
+<p>I'm learning things one step at a time, thanks to this boot camp. It's tough, but I'm doing it.</p> 
+<p>I have to make sure I put the CSS instructions within the 'style' section of the 'head'.</p>
+</div>
+
+<div>
+<h1>Let's run some anchor and href drills. Make a website that links to Sporting systems and several ammunition types.</h1>
+
+<h2 id="special">I love Minuteman Ammunition! I should, after all.</h2>
+<h3>This is where you can find Minuteman Ammunition at a physical store:</h3>
+<h3><a href="https://sporting-systems.com/">Sporting Systems Vancouver</a></h3>
+<h3>You can also find the ammo at the Minuteman Ammo website! It's listed here:</h3>
+<h3><a href="https://minutemanammo.com/">Minutemanammo.com</a></h3>
+<h3>Here are some of my most favorite cartridges loaded by Minuteman Ammunition:</h3>
+</div>
+
+<div >
+<ul>
+     <li> 
+	<a href="https://minutemanammo.com/collections/rifle/products/223-remington-55-grain-fmj-bt-3-000-fps" target="_blank">.223 Remington 55 Grain 	BTHP</a>
+     </li>
+        <img src="https://minutemanammo.com/cdn/shop/products/20201022_163348_4ed77423-60a5-4b43-ab6a-b427b7827813_80x80@2x.jpg?v=1603417861" />
+    </li>
+	
+	<ul>
+	<li>
+	<p>.223 Remington is a versatile cartridge that has been used since the mid 1950's</p>
+</ul>
+</div>
+
+<div>
+<ul>
+	<li>
+	<a href="https://minutemanammo.com/collections/rifle/products/300-blackout-110-grain-hornady-v-max" target="_blank">.300 BLK 110 Grain V-MAX</a>
+	</li>
+	<img src="https://minutemanammo.com/cdn/shop/products/300vmax_80x80@2x.jpg?v=1655583059" alt="110 Grain VMAX .300 BLK" />
+
+	<ul>
+	<li>
+	<p>.300 BLK was invented in the early 2000's, specifically for covert special operations and better suppression.</p>
+</ul>
+</div>
+
+<div>
+<ul>
+    <li>
+        <a href="https://minutemanammo.com/collections/rifle/products/308-7-62x51-168-grain-speer-spitzer-2-850fps-20-rounds" target="_blank">.308 Winchester 168 Grain BTHP</a>
+    </li>
+    <img src="https://minutemanammo.com/cdn/shop/files/308_2_80x80@2x.jpg?v=1724530262" alt="168 Grain BTHP .308 Win" />
+
+	<ul>
+	<li>
+	<p>.308 Winchester has been a reliable hunting and military cartride for over seventy years!</p>
+</ul>
+</div>
+
+<div style="text-align: center;">
+<h2> My Hobbies!</h2>
+  <div>
+  <p>Target shooting</p>
+  <p>Reloading</p>
+  <p>Cooking!</p>
+  </div>
+</div>
+
+<div class="poster">
+<i><h3 style="font-size: 16px;">Here's a section dedicated to forms, checklists, and labels with input fields and clickable buttons!</h3></i>
+<form>
+<label for="name">Your Name</label>
+<input id="name" type= "text">
+<br>
+<label for="email">Your Email</label>
+<input id="email" type="email">
+<br>
+<label for="password">Password</label>
+<input id="password" type="password">
+<br>
+<label>Write A Detailed Message!</label>
+<br>
+<textarea rows="4" cols="30"></textarea>
+<br>
+<input type="submit" value="Click Here!"/>
+
+</div>
+
+<div>
+  <h2> What About Cooking Time?</h2>
+  <div>
+    <p> I love the feel of cooking for myself</p>
+    <p>Bringing happiness to my tummy is the best!</p>
+  </div>
+</div>
+
+<div>
+<h3>Here's a section devoted to select and options menus.</h3>
+<p>What is your favorite cartridge?</p>
+<select>
+	<option>9mm Luger</option>
+	<option>5.56 NATO</option>
+	<option>10mm Automatic</option>
+	<option>7.62x39</option>
+	<option>7.62 NATO</option>
+</select>
+</div>
+
+<div>
+<br>
+<p>What kind of firearm would you carry as a primary weapon?</p>
+<strong>
+<p><input type="radio" name="weapon"/>Auto-Loading Pistol</p>
+<p><input type="radio" name="weapon"/>Large-Frame Revolver</p>
+<p><input type="radio" name="weapon"/>AR-15 Combat Rifle</p>
+<p><input type="radio" name="weapon"/>AK47 Combat Rifle</p>
+<p><input type="radio" name="weapon"/>Pump Action Shotgun</p>
+<p><input type="radio" name="weapon"/>Semi-Automatic Shotgun</p>
+<p><input type="radio" name="weapon"/>Bolt Action Rifle</p>
+</strong>
+</div>
+
+<div>
+<p>If you could take two ammunition types with you into a civilian armed conflict, such as rioting and looting, what would you take?</p>
+<em>
+<p><input type="checkbox"/>Hollow Point Ammunition</p>
+<p><input type="checkbox"/>Full Metal Jacket Ammunition</p>
+<p><input type="checkbox"/>Light Armor Piercing (LAP)</p>
+<p><input type="checkbox"/>00 Buckshot</p>
+<p><input type="checkbox"/>Shotgun Slugs</p>
+</em>
+
+</form>
+</div>
+
+
+</body>
+</main>
+
+<br>
+<br>
+<footer>Chandler's HTML Practice Page, 2026</footer>
+
+</html>
